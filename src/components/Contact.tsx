@@ -9,7 +9,7 @@ const Contact = () => {
       title: "Email",
       description: "Get in touch directly",
       action: "Send Email",
-      link: "mailto:your.email@example.com",
+      link: "mailto:cs21bt020.alum25@iitdh.ac.in",
       primary: true
     },
     {
@@ -17,21 +17,21 @@ const Contact = () => {
       title: "LinkedIn",
       description: "Professional network",
       action: "Connect",
-      link: "https://linkedin.com/in/your-profile"
+      link: "https://www.linkedin.com/in/hrishikesh-karande/"
     },
     {
       icon: Github,
       title: "GitHub",
       description: "View my code",
       action: "Follow",
-      link: "https://github.com/your-username"
+      link: "https://github.com/hrishi483/"
     },
     {
-      icon: MessageSquare,
-      title: "Schedule Call",
-      description: "Let's discuss your project",
-      action: "Book Meeting",
-      link: "https://calendly.com/your-calendar"
+      icon: MessageSquare, // You can also use Phone from lucide-react
+      title: "Phone",
+      description: "Call me directly",
+      action: "Call Now",
+      link: "tel:+918600704003"
     }
   ];
 
@@ -106,20 +106,20 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              onClick={() => window.open("mailto:your.email@example.com?subject=Agent-as-a-Service Inquiry", '_blank')}
+              onClick={() => window.open("mailto:cs21bt020.alum25@iitdh.ac.in?subject=Agent-as-a-Service Inquiry", '_blank')}
               className="px-8 py-4 shadow-sky hover:shadow-glow transition-all duration-300"
             >
               <Mail className="w-5 h-5 mr-2" />
               Start Conversation
             </Button>
             <Button 
-              variant="outline" 
-              size="lg"
-              onClick={() => window.open("https://calendly.com/your-calendar", '_blank')}
-              className="px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
-              <MessageSquare className="w-5 h-5 mr-2" />
-              Schedule Call
+                variant="outline" 
+                size="lg"
+                onClick={() => window.open("tel:+919876543210")}
+                className="px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              >
+                <MessageSquare className="w-5 h-5 mr-2" />
+                Call Now
             </Button>
           </div>
         </Card>
